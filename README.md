@@ -1,6 +1,6 @@
 # Hyena E-Bike Home Assistant Integration
 
-![GitHub manifest version](https://img.shields.io/github/manifest-json/v/mpkogli/home-assistant-hyena?filename=custom_components%2Fhyena_ebike%2Fmanifest.json)
+![GitHub manifest version](https://img.shields.io/github/manifest-json/v/mpkogli/home-assistant-hyena?filename=manifest.json)
 
 Home Assistant custom integration for monitoring Trek e-bikes equipped with Hyena motor systems via Bluetooth Low Energy.
 
@@ -30,8 +30,8 @@ Before installing this integration, ensure you have:
 ### Manual Installation
 
 1. Download the latest release from the [GitHub repository](https://github.com/mpkogli/home-assistant-hyena)
-2. Copy the `hyena_ebike` directory from `custom_components` into your Home Assistant's `custom_components` directory
-   - Path should be: `<config_directory>/custom_components/hyena_ebike/`
+2. Copy the contents of the repository into your Home Assistant's `custom_components` directory
+   - Path should be: `<config_directory>/custom_components/hyena_ebike/<repository contents>`
 3. Restart Home Assistant
 4. Proceed to the [Setup](#setup) section below
 
@@ -41,7 +41,7 @@ Before installing this integration, ensure you have:
 
 1. Ensure your e-bike is powered on and within Bluetooth range of your ESPHome proxy device
 2. Navigate to the Home Assistant Integrations page (Settings → Devices & Services)
-3. Click the `+ ADD INTEGRATION` button in the lower right-hand corner
+3. Click the `+ ADD INTEGRATION` button in the lower right-hand corner **I'm not certain this works, as I don't use HACS**
 4. Search for `Hyena E-Bike`
 5. Follow the configuration flow:
    - If your e-bike is in range, it should be automatically discovered
